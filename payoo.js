@@ -12,13 +12,15 @@ document.getElementById("login-btn").addEventListener("click", function(event) {
 // ekn condition set korte hbe. amra html er input e giye value set kore aschi jate barbar input e likhte na hoi. 
     if(mobileNumber.length === 11) {
         if(convertedPin === 1234) {
+
+// eta 2nd html file er link. ekn login e click korle soja 2nd html file open hbe.
             window.location.href="index2.html"
         }
         else{
-            console.log("Invalid Action")
+            alert("Invalid Action")
         }
     }
     else{
-        console.log("Invalid Mobile Number")
+        alert("Invalid Mobile Number")
     }
 })
